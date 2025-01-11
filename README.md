@@ -1,7 +1,7 @@
-# Economics ACC - Colman
+# Intro ACC - YVC
 
 ## Repository Overview
-This repository contains all the essential materials for **Economics ACC - Colman**, including course notes and final exam resources. Below is a detailed breakdown of the files and their purposes.
+This repository contains all the essential materials for **INTRO ACC - YVC**, including course notes and final exam resources. Below is a detailed breakdown of the files and their purposes.
 
 ---
 
@@ -30,7 +30,7 @@ The complete course notes for **Intro ACC - 2025** are available here:
 
 ## Additional Notes
 - These files have been uploaded to assist students in preparing for their exams and mastering the course material.
-- For further clarification or additional resources, please reach out via the repository's issues section.
+- For further clarification or additional resources, please reach out Dr. Tsaban.
 
 ---
 
