@@ -1,44 +1,46 @@
-# Intro ACC - YVC
+# Intro ACC - YVC 🚀
 
-## Repository Overview
-This repository contains all the essential materials for INTRO ACC - YVC, including course notes and final exam resources. Below is a detailed breakdown of the files and their purposes.
+## Repository Overview 🗂️
+Welcome to the **Intro ACC - YVC** resource repository! Here, you'll find all the essential files and materials to help you prepare for the course and ace your exams.
 
-## Course Materials
+---
 
-### Course Notes
-The complete course notes for Intro ACC - 2025 are available here:
+## Course Materials 📚
 
-📄 [Course Notes - Intro ACC - 2025 A.xlsx](Course%20Notes%20-%20Intro%20ACC%20-%202025%20A.xlsx)  
-These notes cover all topics discussed during the lectures and serve as the foundational material for the course.
+### **Course Notes - Intro ACC - 2025 A.xlsx**
+Comprehensive notes and key takeaways from the lectures, neatly organized for effective review.
 
-## Final Exam Resources
+### **Equity (Hon Azmi).xlsx**
+This file covers **changes in equity**, focusing on specific topics that are **mandatory** for the exam. Make sure you're well-prepared on these concepts!
 
-### Final Exam Moed A - Part A
-📄 [Final Exam Moed A Part A - 2024 A.docx](Final%20Exam%20Moed%20A%20Part%20A%20-%202024%20A.docx)  
-This file contains the first part of the Moed A final exam from 2024 A Semester, without answers.
+---
 
-### Final Exam Moed A - Basis and Solutions
-📄 [Final Exam Moed A Basis and ANS.xlsx](Final%20Exam%20Moed%20A%20Basis%20and%20ANS.xlsx)  
-This file provides the complete answers for the mass question from the Moed A final exam example, along with other exam solutions.
+## Final Exam Resources 📝
 
-### Final Exam Moed A - Part B
-📄 [Final Exam Moed A Part B - 2024 A.docx](Final%20Exam%20Moed%20A%20Part%20B%20-%202024%20A.docx)  
-The second part of the Moed A final exam, focusing on additional advanced topics covered throughout the course.
+### **Moed A**
+1. **Final Exam Moed A Part A - 2024 A.docx**  
+   The first part of the Moed A exam (without solutions). Use it for hands-on practice.
+2. **Final Exam Moed A Basis and ANS.xlsx**  
+   This Excel file provides answers to the main questions from Moed A, along with additional examples.
+3. **Final Exam Moed A Part B - 2024 A.docx**  
+   The second part of Moed A, featuring more advanced topics.
 
-### Final Exam Moed B - Part A
-📄 [Final Exam Moed B Part A - 2024 A.docx](Final%20Exam%20Moed%20B%20Part%20A%20-%202024%20A.docx)  
-This file contains the first part of the Moed B final exam from 2024 A Semester, without answers.
+### **Moed B**
+1. **Final Exam Moed B Part A - 2024 A.docx**  
+   The first part of the Moed B exam (no solutions included). Great for extra practice.
+2. **Final Exam Moed B Basis and ANS.xlsx**  
+   Detailed solutions for Moed B questions, plus further examples.
+3. **Final Exam Moed B Part B - 2024 A.docx**  
+   The second part of Moed B, providing deeper coverage of the course material.
 
-### Final Exam Moed B - Basis and Solutions
-📄 [Final Exam Moed B Basis and ANS.xlsx](Final%20Exam%20Moed%20B%20Basis%20and%20ANS.xlsx)  
-This file provides the complete answers for the mass question from the Moed B final exam example, along with other exam solutions.
+---
 
-### Final Exam Moed B - Part B
-📄 [Final Exam Moed B Part B - 2024 A.docx](Final%20Exam%20Moed%20B%20Part%20B%20-%202024%20A.docx)  
-The second part of the Moed B final exam, focusing on additional advanced topics covered throughout the course.
+## Additional Notes 💡
+These files are intended to help you prepare for your exams and strengthen your understanding of the course.  
+If you need any clarifications or extra resources, please reach out to **Dr. Tsaban**.
 
-## Additional Notes
-These files have been uploaded to assist students in preparing for their exams and mastering the course material. For further clarification or additional resources, please reach out to Dr. Tsaban.
+---
 
-## Acknowledgments
-Thank you for engaging in this course and for your continuous effort to excel. Best of luck with your studies! 🎓
+## Acknowledgments 🎉
+Thank you for your dedication and hard work throughout this course!  
+Wishing you the best of luck in your studies and exam preparations. Keep learning, stay motivated, and aim high! 🚀
