@@ -1,170 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Introduction to Financial Accounting - YVC</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-body {font-family: 'Inter', sans-serif;}
-.gradient-bg {background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);}
-.lecture-group {background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Financial Accounting - YVC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {font-family: 'Inter', sans-serif;}
+        .gradient-bg {background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);}
+        .lecture-group {background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);}
+        .lecture-card {transition: all 0.3s ease;}
+        .lecture-card:hover {box-shadow: 0 10px 40px rgba(0,0,0,0.1);}
+        .video-container {position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 0.5rem;}
+        .video-container iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+        .new-badge {animation: pulse 2s infinite;}
+        @keyframes pulse {
+            0%, 100% {opacity: 1;}
+            50% {opacity: 0.7;}
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
+
 <header class="gradient-bg text-white shadow-lg">
-<div class="container mx-auto px-6 py-12 text-center">
-<h1 class="text-4xl md:text-5xl font-bold leading-tight">Introduction to Financial Accounting</h1>
-<p class="text-xl md:text-2xl mt-2 font-light">Yezreel Valley College (YVC)</p>
-<p class="text-lg mt-4">Semester 2025B</p>
-</div>
+    <div class="container mx-auto px-6 py-12 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Introduction to Financial Accounting</h1>
+        <p class="text-xl md:text-2xl mt-2 font-light">Yezreel Valley College (YVC)</p>
+        <p class="text-lg mt-4">Semester 2025B</p>
+    </div>
 </header>
+
 <main class="container mx-auto px-6 py-8">
-<div class="bg-white p-8 rounded-2xl shadow-md mb-8">
-<h2 class="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-blue-200 pb-2">Welcome!</h2>
-<p class="text-lg">This course provides the foundational knowledge for understanding the language of business. We will explore how financial information is created, reported, and used to make critical economic decisions. Whether you plan to be an accountant, manager, investor, or entrepreneur, this course will equip you with essential skills for your career.</p>
-<div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-<a href="https://mypac-my.sharepoint.com/:x:/g/personal/shay_tsaban_pac_org_il/ERkHN8fruMNLtOzBH-Ke4iYBCV0LnmB52aAtx6MyINOiGA?e=Z79PXv" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 text-center" target="_blank">Access Course Notes</a>
-<a href="https://mypac-my.sharepoint.com/:w:/g/personal/shay_tsaban_pac_org_il/EWpkKR3ysflJiNo6DARJqzQB9P5_vtiD8PJ6s318tXpFhg?e=O9fxY6" class="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 text-center" target="_blank">Exercises for Further Practice</a>
-</div>
-</div>
-<div class="grid md:grid-cols-2 gap-8">
-<div class="bg-white p-8 rounded-2xl shadow-md">
-<h2 class="text-2xl font-bold text-gray-900 mb-4">Course Aims</h2>
-<p class="mb-4">The primary goal of financial accounting is to provide useful financial information for making sound economic decisions, particularly in the context of resource allocation. By the end of this course, you will be able to:</p>
-<ul class="list-disc list-inside space-y-2 text-gray-700">
-<li>Understand the core principles and conceptual framework of financial accounting.</li>
-<li>Record business transactions using journal entries and post them to ledger accounts.</li>
-<li>Prepare and interpret the main financial statements: the Statement of Financial Position (Balance Sheet), Income Statement, and Statement of Changes in Equity.</li>
-<li>Analyze financial data to assess a company's performance and financial health.</li>
-<li>Address accounting issues related to key accounts like receivables, fixed assets, and inventory.</li>
-</ul>
-</div>
-<div class="bg-white p-8 rounded-2xl shadow-md">
-<h2 class="text-2xl font-bold text-gray-900 mb-4">About the Lecturer</h2>
-<p class="text-gray-700">Dr. Shay Tsaban is a Certified Public Accountant (CPA) with a multidisciplinary academic background that combines finance, social responsibility, and corporate strategy. He holds a bachelor's degree in Accounting and Economics from The Open University of Israel and a Ph.D. from Ariel University. His research interests include Corporate Happiness Responsibility (CHR), gender wage gaps, and the informational value of accounting. Dr. Tsaban has extensive professional experience in accounting and has served as a member of the Examination Committee of the Board of Accountants at the Ministry of Justice.</p>
-</div>
-</div>
-<div class="bg-white p-8 rounded-2xl shadow-md mt-8">
-<h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Course Layout</h2>
-<div class="space-y-4">
-<div class="p-4 border border-gray-200 rounded-lg">
-<h3 class="text-xl font-semibold text-blue-700">Lecture 1: Basics of Financial Accounting Values - 29.10.2025</h3>
-<p class="mt-2 text-gray-600">This introductory lecture covers the five fundamental elements of accounting. Understanding these concepts is the first step to reading and preparing financial statements.</p>
-<ul class="list-disc list-inside space-y-1 text-gray-700 mt-2 pl-4">
-<li><strong>Assets:</strong> Economic resources controlled by the entity (e.g., cash, machinery, inventory) that are expected to provide future benefits.</li>
-<li><strong>Liabilities:</strong> The entity's obligations to other parties (e.g., loans, amounts owed to suppliers) that must be settled in the future.</li>
-<li><strong>Equity:</strong> The residual interest in the assets after deducting liabilities. It represents the ownership's stake in the company (Assets - Liabilities = Equity).</li>
-<li><strong>Income:</strong> Increases in economic benefits, such as revenues from sales or services, which result in an increase in equity.</li>
-<li><strong>Expenses:</strong> Decreases in economic benefits, such as the cost of goods sold or salaries, which result in a decrease in equity.</li>
-</ul>
-<div class="mt-4">
-<h4 class="font-semibold text-gray-800 mb-2">📹 Lecture Video:</h4>
-<div class="relative w-full max-w-2xl" style="padding-bottom: 56.25%;">
-<iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/PcCJStAw7tU?rel=0" title="Lecture 1 Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-<div class="p-4 border border-gray-200 rounded-lg">
-<h3 class="text-xl font-semibold text-blue-700">Lecture 2: Sales, Cost of Goods Sold, Gross Profit and basics of P&L - 5.11.2025</h3>
-<p class="mt-2 text-gray-600">This lecture introduces key concepts of the Income Statement (Profit & Loss Statement) and how companies measure their profitability from operations.</p>
-<ul class="list-disc list-inside space-y-1 text-gray-700 mt-2 pl-4">
-<li><strong>Sales Revenue:</strong> The total income generated from selling goods or services to customers during a specific period.</li>
-<li><strong>Cost of Goods Sold (COGS):</strong> The direct costs attributable to producing the goods sold by a company, including materials and direct labor.</li>
-<li><strong>Gross Profit:</strong> The difference between sales revenue and cost of goods sold (Sales - COGS = Gross Profit), representing the profit before operating expenses.</li>
-<li><strong>Profit & Loss Statement (P&L):</strong> Also known as the Income Statement, it shows a company's revenues, expenses, and net income over a period of time.</li>
-</ul>
-<div class="mt-4">
-<h4 class="font-semibold text-gray-800 mb-2">📹 Lecture Video:</h4>
-<div class="relative w-full max-w-2xl" style="padding-bottom: 56.25%;">
-<iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/BBH9yep7QOw?rel=0" title="Lecture 2 Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-<div class="p-4 border border-gray-200 rounded-lg">
-<h3 class="text-xl font-semibold text-blue-700">Lecture 3: Journal Entries - 12.11.2025</h3>
-<p class="mt-2 text-gray-600">Journal entries are the foundational mechanism for recording business transactions in accounting. They document the double-entry principle, ensuring that every transaction affects at least two accounts and maintains the accounting equation (Assets = Liabilities + Equity). Properly recorded journal entries form the basis for all subsequent financial reporting and analysis.</p>
-<div class="space-y-6 mt-4">
-<div class="lecture-group p-6 rounded-lg">
-<h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 3 - Morning (9:15) Group</h4>
-<div class="relative w-full max-w-2xl" style="padding-bottom: 56.25%;">
-<iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/f2bSxiVLR-E?rel=0" title="Lecture 3 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-<div class="lecture-group p-6 rounded-lg">
-<h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 3 - Noon (12:15) Group</h4>
-<div class="relative w-full max-w-2xl" style="padding-bottom: 56.25%;">
-<iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/_JDGjScFmh0?rel=0" title="Lecture 3 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-</div>
-<div class="p-4 border border-gray-200 rounded-lg">
-<h3 class="text-xl font-semibold text-blue-700">Lecture 4: Income Recognition - 19.11.2025</h3>
-<p class="mt-2 text-gray-600">Income recognition is a critical accounting principle that determines when revenue should be recorded. Under accrual accounting, revenue is recognized when it is earned, not necessarily when cash is received. This lecture explores the criteria for revenue recognition, including the transfer of control of goods or services to the customer, and how this principle impacts financial statements and cash flow analysis.</p>
-<div class="space-y-6 mt-4">
-<div class="lecture-group p-6 rounded-lg">
-<h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 4 - Morning (9:15) Group</h4>
-<div class="relative w-full max-w-2xl" style="padding-bottom: 56.25%;">
-<iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/s-jWpIF2vhI?rel=0" title="Lecture 4 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-<div class="lecture-group p-6 rounded-lg">
-<h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 4 - Noon (12:15) Group</h4>
-<div class="relative w-full max-w-2xl" style="padding-bottom: 56.25%;">
-<iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/K8FF2BwI4tU?rel=0" title="Lecture 4 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-</div>
-<div class="p-4 border border-gray-200 rounded-lg">
-<h3 class="text-xl font-semibold text-blue-700">Lecture 5: Expense Recognition - 26.11.2025</h3>
-<p class="mt-2 text-gray-600">Expense recognition determines when costs incurred by an entity should be recorded as expenses in the income statement. Under the matching principle, expenses are matched to the revenues they help generate. This lecture covers how expenses are allocated across periods, segments, and cost centers (חשבונות חתך בחשבונאות - cross-sectional accounts), which allows for better understanding of profitability by department, product line, or business division.</p>
-<div class="space-y-6 mt-4">
-<div class="lecture-group p-6 rounded-lg">
-<h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 5 - Morning (9:15) Group</h4>
-<div class="relative w-full max-w-2xl" style="padding-bottom: 56.25%;">
-<iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/ogCduRCYbAU?rel=0" title="Lecture 5 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-<div class="lecture-group p-6 rounded-lg">
-<h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 5 - Noon (12:15) Group</h4>
-<div class="relative w-full max-w-2xl" style="padding-bottom: 56.25%;">
-<iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/oCDy4wxW5O4?rel=0" title="Lecture 5 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-</div>
-<div class="p-4 border border-gray-200 rounded-lg">
-<h3 class="text-xl font-semibold text-blue-700">Lecture 6: Accounts Receivable and Provisions for Bad Debts - 3.12.2025</h3>
-<p class="mt-2 text-gray-600">This lecture examines how companies manage and account for amounts owed by customers (accounts receivable). A key challenge in accounting for receivables is determining the carrying value when there is a risk that some customers will not pay. Under the expected credit loss model, companies must estimate and record provisions (allowances) for bad debts. This requires judgment about customer creditworthiness and historical collection patterns, and directly impacts both the balance sheet valuation of assets and the income statement through the recognition of bad debt expense. Understanding this topic is crucial for assessing a company's asset quality and profitability.</p>
-<div class="space-y-6 mt-4">
-<div class="lecture-group p-6 rounded-lg">
-<h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 6 - Morning (9:15) Group</h4>
-<div class="relative w-full max-w-2xl" style="padding-bottom: 56.25%;">
-<iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/eZKbFo-XHw4?rel=0" title="Lecture 6 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-<div class="lecture-group p-6 rounded-lg">
-<h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 6 - Noon (12:15) Group</h4>
-<div class="relative w-full max-w-2xl" style="padding-bottom: 56.25%;">
-<iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/d5Dvx_XmjlQ?rel=0" title="Lecture 6 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-</div>
-<div class="p-4 border border-gray-200 rounded-lg"><h3 class="text-xl font-semibold">Lecture 7 & 8: Non-Current Assets - Property, Plant, and Equipment (Fixed Assets) & Depreciation</h3></div>
-<div class="p-4 border border-gray-200 rounded-lg"><h3 class="text-xl font-semibold">Lecture 9 & 10: Integration and Full Preparation of Financial Statements</h3></div>
-<div class="p-4 border border-gray-200 rounded-lg"><h3 class="text-xl font-semibold">Final Lectures: Comprehensive Review & Exam Preparation</h3></div>
-</div>
-</div>
+
+    <!-- Welcome Section -->
+    <div class="bg-white p-8 rounded-2xl shadow-md mb-8 lecture-card">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-blue-200 pb-2">Welcome!</h2>
+        <p class="text-lg">This course provides the foundational knowledge for understanding the language of business. We will explore how financial information is created, reported, and used to make critical economic decisions. Whether you plan to be an accountant, manager, investor, or entrepreneur, this course will equip you with essential skills for your career.</p>
+        <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+            <a href="https://mypac-my.sharepoint.com/:x:/g/personal/shay_tsaban_pac_org_il/ERkHN8fruMNLtOzBH-Ke4iYBCV0LnmB52aAtx6MyINOiGA?e=Z79PXv" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 text-center" target="_blank">📚 Access Course Notes</a>
+            <a href="https://mypac-my.sharepoint.com/:w:/g/personal/shay_tsaban_pac_org_il/EWpkKR3ysflJiNo6DARJqzQB9P5_vtiD8PJ6s318tXpFhg?e=O9fxY6" class="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 text-center" target="_blank">✏️ Exercises for Further Practice</a>
+        </div>
+    </div>
+
+    <!-- Course Info Grid -->
+    <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-md lecture-card">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">🎯 Course Aims</h2>
+            <p class="mb-4">The primary goal of financial accounting is to provide useful financial information for making sound economic decisions, particularly in the context of resource allocation. By the end of this course, you will be able to:</p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Understand the core principles and conceptual framework of financial accounting.</li>
+                <li>Record business transactions using journal entries and post them to ledger accounts.</li>
+                <li>Prepare and interpret the main financial statements: the Statement of Financial Position (Balance Sheet), Income Statement, and Statement of Changes in Equity.</li>
+                <li>Analyze financial data to assess a company's performance and financial health.</li>
+                <li>Address accounting issues related to key accounts like receivables, fixed assets, and inventory.</li>
+            </ul>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-md lecture-card">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">👨‍🏫 About the Lecturer</h2>
+            <p class="text-gray-700">Dr. Shay Tsaban is a Certified Public Accountant (CPA) with a multidisciplinary academic background that combines finance, social responsibility, and corporate strategy. He holds a bachelor's degree in Accounting and Economics from The Open University of Israel and a Ph.D. from Ariel University. His research interests include Corporate Happiness Responsibility (CHR), gender wage gaps, and the informational value of accounting. Dr. Tsaban has extensive professional experience in accounting and has served as a member of the Examination Committee of the Board of Accountants at the Ministry of Justice.</p>
+        </div>
+    </div>
+
+    <!-- Course Layout -->
+    <div class="bg-white p-8 rounded-2xl shadow-md mt-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">📅 Course Layout</h2>
+        <div class="space-y-4">
+
+            <!-- Lecture 1 -->
+            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300">
+                <h3 class="text-xl font-semibold text-blue-700">Lecture 1: Basics of Financial Accounting Values - 29.10.2025</h3>
+                <p class="mt-2 text-gray-600">This introductory lecture covers the five fundamental elements of accounting. Understanding these concepts is the first step to reading and preparing financial statements.</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-700 mt-2 pl-4">
+                    <li><strong>Assets:</strong> Economic resources controlled by the entity (e.g., cash, machinery, inventory) that are expected to provide future benefits.</li>
+                    <li><strong>Liabilities:</strong> The entity's obligations to other parties (e.g., loans, amounts owed to suppliers) that must be settled in the future.</li>
+                    <li><strong>Equity:</strong> The residual interest in the assets after deducting liabilities. It represents the ownership's stake in the company (Assets - Liabilities = Equity).</li>
+                    <li><strong>Income:</strong> Increases in economic benefits, such as revenues from sales or services, which result in an increase in equity.</li>
+                    <li><strong>Expenses:</strong> Decreases in economic benefits, such as the cost of goods sold or salaries, which result in a decrease in equity.</li>
+                </ul>
+                <div class="mt-4">
+                    <h4 class="font-semibold text-gray-800 mb-2">📹 Lecture Video:</h4>
+                    <div class="video-container max-w-2xl">
+                        <iframe src="https://www.youtube.com/embed/PcCJStAw7tU?rel=0" title="Lecture 1 Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lecture 2 -->
+            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300">
+                <h3 class="text-xl font-semibold text-blue-700">Lecture 2: Sales, Cost of Goods Sold, Gross Profit and basics of P&L - 5.11.2025</h3>
+                <p class="mt-2 text-gray-600">This lecture introduces key concepts of the Income Statement (Profit & Loss Statement) and how companies measure their profitability from operations.</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-700 mt-2 pl-4">
+                    <li><strong>Sales Revenue:</strong> The total income generated from selling goods or services to customers during a specific period.</li>
+                    <li><strong>Cost of Goods Sold (COGS):</strong> The direct costs attributable to producing the goods sold by a company, including materials and direct labor.</li>
+                    <li><strong>Gross Profit:</strong> The difference between sales revenue and cost of goods sold (Sales - COGS = Gross Profit), representing the profit before operating expenses.</li>
+                    <li><strong>Profit & Loss Statement (P&L):</strong> Also known as the Income Statement, it shows a company's revenues, expenses, and net income over a period of time.</li>
+                </ul>
+                <div class="mt-4">
+                    <h4 class="font-semibold text-gray-800 mb-2">📹 Lecture Video:</h4>
+                    <div class="video-container max-w-2xl">
+                        <iframe src="https://www.youtube.com/embed/BBH9yep7QOw?rel=0" title="Lecture 2 Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lecture 3 -->
+            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300">
+                <h3 class="text-xl font-semibold text-blue-700">Lecture 3: Journal Entries - 12.11.2025</h3>
+                <p class="mt-2 text-gray-600">Journal entries are the foundational mechanism for recording business transactions in accounting. They document the double-entry principle, ensuring that every transaction affects at least two accounts and maintains the accounting equation (Assets = Liabilities + Equity). Properly recorded journal entries form the basis for all subsequent financial reporting and analysis.</p>
+                <div class="space-y-6 mt-4">
+                    <div class="lecture-group p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 3 - Morning (9:15) Group</h4>
+                        <div class="video-container max-w-2xl">
+                            <iframe src="https://www.youtube.com/embed/f2bSxiVLR-E?rel=0" title="Lecture 3 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="lecture-group p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 3 - Noon (12:15) Group</h4>
+                        <div class="video-container max-w-2xl">
+                            <iframe src="https://www.youtube.com/embed/_JDGjScFmh0?rel=0" title="Lecture 3 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lecture 4 -->
+            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300">
+                <h3 class="text-xl font-semibold text-blue-700">Lecture 4: Income Recognition - 19.11.2025</h3>
+                <p class="mt-2 text-gray-600">Income recognition is a critical accounting principle that determines when revenue should be recorded. Under accrual accounting, revenue is recognized when it is earned, not necessarily when cash is received. This lecture explores the criteria for revenue recognition, including the transfer of control of goods or services to the customer, and how this principle impacts financial statements and cash flow analysis.</p>
+                <div class="space-y-6 mt-4">
+                    <div class="lecture-group p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 4 - Morning (9:15) Group</h4>
+                        <div class="video-container max-w-2xl">
+                            <iframe src="https://www.youtube.com/embed/s-jWpIF2vhI?rel=0" title="Lecture 4 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="lecture-group p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 4 - Noon (12:15) Group</h4>
+                        <div class="video-container max-w-2xl">
+                            <iframe src="https://www.youtube.com/embed/K8FF2BwI4tU?rel=0" title="Lecture 4 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lecture 5 -->
+            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300">
+                <h3 class="text-xl font-semibold text-blue-700">Lecture 5: Expense Recognition - 26.11.2025</h3>
+                <p class="mt-2 text-gray-600">Expense recognition determines when costs incurred by an entity should be recorded as expenses in the income statement. Under the matching principle, expenses are matched to the revenues they help generate. This lecture covers how expenses are allocated across periods, segments, and cost centers (חשבונות חתך בחשבונאות - cross-sectional accounts), which allows for better understanding of profitability by department, product line, or business division.</p>
+                <div class="space-y-6 mt-4">
+                    <div class="lecture-group p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 5 - Morning (9:15) Group</h4>
+                        <div class="video-container max-w-2xl">
+                            <iframe src="https://www.youtube.com/embed/ogCduRCYbAU?rel=0" title="Lecture 5 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="lecture-group p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 5 - Noon (12:15) Group</h4>
+                        <div class="video-container max-w-2xl">
+                            <iframe src="https://www.youtube.com/embed/oCDy4wxW5O4?rel=0" title="Lecture 5 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lecture 6 -->
+            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300">
+                <h3 class="text-xl font-semibold text-blue-700">Lecture 6: Accounts Receivable and Provisions for Bad Debts - 3.12.2025</h3>
+                <p class="mt-2 text-gray-600">This lecture examines how companies manage and account for amounts owed by customers (accounts receivable). A key challenge in accounting for receivables is determining the carrying value when there is a risk that some customers will not pay. Under the expected credit loss model, companies must estimate and record provisions (allowances) for bad debts. This requires judgment about customer creditworthiness and historical collection patterns, and directly impacts both the balance sheet valuation of assets and the income statement through the recognition of bad debt expense. Understanding this topic is crucial for assessing a company's asset quality and profitability.</p>
+                <div class="space-y-6 mt-4">
+                    <div class="lecture-group p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 6 - Morning (9:15) Group</h4>
+                        <div class="video-container max-w-2xl">
+                            <iframe src="https://www.youtube.com/embed/eZKbFo-XHw4?rel=0" title="Lecture 6 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="lecture-group p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 6 - Noon (12:15) Group</h4>
+                        <div class="video-container max-w-2xl">
+                            <iframe src="https://www.youtube.com/embed/d5Dvx_XmjlQ?rel=0" title="Lecture 6 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lecture 7 - NEW -->
+            <div class="p-6 border-2 border-blue-400 rounded-xl lecture-card bg-blue-50">
+                <div class="flex items-center gap-3 mb-2">
+                    <h3 class="text-xl font-semibold text-blue-700">Lecture 7: Fixed Assets (Property, Plant & Equipment) - Introduction to Depreciation - 10.12.2025</h3>
+                    <span class="new-badge bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">NEW</span>
+                </div>
+                <p class="mt-2 text-gray-600">This lecture introduces <strong>non-current assets</strong>, specifically <strong>Property, Plant, and Equipment (PP&E)</strong>, also known as <strong>Fixed Assets (רכוש קבוע)</strong>. Unlike current assets expected to be converted to cash within a year, fixed assets are long-term tangible assets used in operations for more than one year.</p>
+                
+                <div class="mt-4 bg-white p-4 rounded-lg border border-blue-200">
+                    <h4 class="font-semibold text-gray-800 mb-3">📋 Key Topics Covered:</h4>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><strong>Definition of Fixed Assets:</strong> Assets that meet two cumulative conditions: (1) expected useful life exceeding one year, and (2) physical/tangible existence (e.g., machinery, vehicles, buildings, furniture, computers).</li>
+                        <li><strong>Cost Measurement:</strong> Fixed assets are initially recorded at cost, which includes the purchase price plus all necessary costs to bring the asset to its location and working condition (transportation, installation, customs duties). Recurring costs like maintenance are expensed, not capitalized.</li>
+                        <li><strong>Depreciation Concept:</strong> The systematic allocation of an asset's cost over its useful life. Depreciation expense appears in the Income Statement, while accumulated depreciation reduces the asset's carrying value on the Balance Sheet.</li>
+                        <li><strong>Straight-Line Depreciation (קו ישר):</strong> The most common method, assuming equal depreciation each year. Formula: <em>Depreciation = (Cost - Residual Value) / Useful Life</em></li>
+                        <li><strong>Sum-of-Years-Digits Depreciation (סכום ספרות יורד - סס"י):</strong> An accelerated method recognizing higher depreciation in early years. Uses the formula: <em>Sum of Digits = n × (n+1) / 2</em>, where n is the useful life in years.</li>
+                        <li><strong>Partial Year Depreciation:</strong> When assets are acquired or disposed of mid-year, depreciation is calculated proportionally based on the number of months the asset was in use.</li>
+                        <li><strong>Gain/Loss on Disposal:</strong> When selling a fixed asset, the difference between sale proceeds and carrying value (cost minus accumulated depreciation) results in either a capital gain (רווח הון) or capital loss (הפסד הון).</li>
+                        <li><strong>Land Treatment:</strong> Land is not depreciated as it does not wear out or lose value through use. When purchasing property, the land portion is treated as residual value.</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4 bg-white p-4 rounded-lg border border-blue-200">
+                    <h4 class="font-semibold text-gray-800 mb-3">🔢 Key Formulas:</h4>
+                    <div class="space-y-2 text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">
+                        <p><strong>Carrying Value (Book Value):</strong> Cost - Accumulated Depreciation</p>
+                        <p><strong>Straight-Line Depreciation:</strong> D = (I₀ - Iᵣ) / n</p>
+                        <p><strong>Sum of Digits:</strong> SD = n × (n + 1) / 2</p>
+                        <p><strong>SYD Depreciation:</strong> D = (Cost - Residual) × (Digit / Sum of Digits)</p>
+                        <p><strong>Gain/Loss on Sale:</strong> Sale Proceeds - Carrying Value at Sale Date</p>
+                    </div>
+                </div>
+
+                <div class="space-y-6 mt-6">
+                    <div class="lecture-group p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 7 - Morning (9:15) Group</h4>
+                        <div class="video-container max-w-2xl">
+                            <iframe src="https://www.youtube.com/embed/xPu2_z5egX8?rel=0" title="Lecture 7 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="lecture-group p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 7 - Noon (12:15) Group</h4>
+                        <div class="video-container max-w-2xl">
+                            <iframe src="https://www.youtube.com/embed/0iaxCCj3C8k?rel=0" title="Lecture 7 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Lectures -->
+            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300 bg-gray-50">
+                <h3 class="text-xl font-semibold text-gray-500">📌 Lecture 8: Fixed Assets - Advanced Topics & Journal Entries</h3>
+                <p class="mt-2 text-gray-500 italic">Coming soon - Continuation of depreciation methods, journal entries for acquisition, depreciation, and disposal of fixed assets.</p>
+            </div>
+
+            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300 bg-gray-50">
+                <h3 class="text-xl font-semibold text-gray-500">📌 Lecture 9 & 10: Integration and Full Preparation of Financial Statements</h3>
+                <p class="mt-2 text-gray-500 italic">Coming soon</p>
+            </div>
+
+            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300 bg-gray-50">
+                <h3 class="text-xl font-semibold text-gray-500">📌 Final Lectures: Comprehensive Review & Exam Preparation</h3>
+                <p class="mt-2 text-gray-500 italic">Coming soon</p>
+            </div>
+
+        </div>
+    </div>
+
 </main>
+
 <footer class="gradient-bg text-white mt-8 py-6">
-<div class="container mx-auto px-6 text-center">
-<p>For any questions, feel free to reach out.</p>
-<p>Contact: <a href="mailto:shay.tsaban@gmail.com" class="font-semibold hover:underline">shay.tsaban@gmail.com</a></p>
-</div>
+    <div class="container mx-auto px-6 text-center">
+        <p>For any questions, feel free to reach out.</p>
+        <p class="mt-2">Contact: <a href="mailto:shay.tsaban@gmail.com" class="font-semibold hover:underline">shay.tsaban@gmail.com</a></p>
+        <p class="mt-4 text-sm opacity-75">© 2025 Dr. Shay Tsaban - Yezreel Valley College</p>
+    </div>
 </footer>
+
 </body>
 </html>
