@@ -1,330 +1,607 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Financial Accounting - YVC</title>
+    <title>Financial Accounting | YVC</title>
+    <!-- Tailwind CSS (via CDN for simplicity as requested, but structured for future) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {font-family: 'Inter', sans-serif;}
-        .gradient-bg {background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);}
-        .lecture-group {background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);}
-        .lecture-card {transition: all 0.3s ease;}
-        .lecture-card:hover {box-shadow: 0 10px 40px rgba(0,0,0,0.1);}
-        .video-container {position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 0.5rem;}
-        .video-container iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-        .new-badge {animation: pulse 2s infinite;}
-        @keyframes pulse {
-            0%, 100% {opacity: 1;}
-            50% {opacity: 0.7;}
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Outfit', sans-serif;
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
 
-<header class="gradient-bg text-white shadow-lg">
-    <div class="container mx-auto px-6 py-12 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Introduction to Financial Accounting</h1>
-        <p class="text-xl md:text-2xl mt-2 font-light">Yezreel Valley College (YVC)</p>
-        <p class="text-lg mt-4">Semester 2025B</p>
-    </div>
-</header>
+<body class="antialiased min-h-screen flex flex-col">
 
-<main class="container mx-auto px-6 py-8">
+    <!-- Navigation / Header -->
+    <header class="glass-header w-full shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1
+                    class="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500">
+                    Financial Accounting
+                </h1>
+                <p class="text-sm text-gray-500 font-medium">Yezreel Valley College • 2025B</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <span
+                    class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-xs font-semibold uppercase tracking-wider border border-blue-100">Dr.
+                    Shay Tsaban</span>
+            </div>
+        </div>
+    </header>
 
-    <!-- Welcome Section -->
-    <div class="bg-white p-8 rounded-2xl shadow-md mb-8 lecture-card">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-blue-200 pb-2">Welcome!</h2>
-        <p class="text-lg">This course provides the foundational knowledge for understanding the language of business. We will explore how financial information is created, reported, and used to make critical economic decisions. Whether you plan to be an accountant, manager, investor, or entrepreneur, this course will equip you with essential skills for your career.</p>
-        <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-            <a href="https://mypac-my.sharepoint.com/:x:/g/personal/shay_tsaban_pac_org_il/ERkHN8fruMNLtOzBH-Ke4iYBCV0LnmB52aAtx6MyINOiGA?e=Z79PXv" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 text-center" target="_blank">📚 Access Course Notes</a>
-            <a href="https://mypac-my.sharepoint.com/:w:/g/personal/shay_tsaban_pac_org_il/EWpkKR3ysflJiNo6DARJqzQB9P5_vtiD8PJ6s318tXpFhg?e=O9fxY6" class="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105 text-center" target="_blank">✏️ Exercises for Further Practice</a>
+    <!-- Hero Section -->
+    <div class="container mx-auto px-6 py-12 text-center animate-entry">
+        <span
+            class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-4 tracking-wide">Semester
+            2025B</span>
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-slate-800">
+            Master the Language of <span class="hero-gradient">Business</span>
+        </h1>
+        <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Explore how financial information creates value. From foundational principles to complex analysis, equip
+            yourself with the skills for a career in finance.
+        </p>
+
+        <!-- Call to Actions -->
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="https://mypac-my.sharepoint.com/:x:/g/personal/shay_tsaban_pac_org_il/ERkHN8fruMNLtOzBH-Ke4iYBCV0LnmB52aAtx6MyINOiGA?e=Z79PXv"
+                class="btn-primary py-3 px-8 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2"
+                target="_blank">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                    </path>
+                </svg>
+                Course Notes
+            </a>
+            <a href="https://mypac-my.sharepoint.com/:w:/g/personal/shay_tsaban_pac_org_il/EWpkKR3ysflJiNo6DARJqzQB9P5_vtiD8PJ6s318tXpFhg?e=O9fxY6"
+                class="btn-secondary py-3 px-8 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2"
+                target="_blank">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                    </path>
+                </svg>
+                Exercises
+            </a>
         </div>
     </div>
 
-    <!-- Course Info Grid -->
-    <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white p-8 rounded-2xl shadow-md lecture-card">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">🎯 Course Aims</h2>
-            <p class="mb-4">The primary goal of financial accounting is to provide useful financial information for making sound economic decisions, particularly in the context of resource allocation. By the end of this course, you will be able to:</p>
-            <ul class="list-disc list-inside space-y-2 text-gray-700">
-                <li>Understand the core principles and conceptual framework of financial accounting.</li>
-                <li>Record business transactions using journal entries and post them to ledger accounts.</li>
-                <li>Prepare and interpret the main financial statements: the Statement of Financial Position (Balance Sheet), Income Statement, and Statement of Changes in Equity.</li>
-                <li>Analyze financial data to assess a company's performance and financial health.</li>
-                <li>Address accounting issues related to key accounts like receivables, fixed assets, and inventory.</li>
-            </ul>
-        </div>
-        <div class="bg-white p-8 rounded-2xl shadow-md lecture-card">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">👨‍🏫 About the Lecturer</h2>
-            <p class="text-gray-700">Dr. Shay Tsaban is a Certified Public Accountant (CPA) with a multidisciplinary academic background that combines finance, social responsibility, and corporate strategy. He holds a bachelor's degree in Accounting and Economics from The Open University of Israel and a Ph.D. from Ariel University. His research interests include Corporate Happiness Responsibility (CHR), gender wage gaps, and the informational value of accounting. Dr. Tsaban has extensive professional experience in accounting and has served as a member of the Examination Committee of the Board of Accountants at the Ministry of Justice.</p>
-        </div>
-    </div>
+    <main class="container mx-auto px-6 py-8 flex-grow">
 
-    <!-- Course Layout -->
-    <div class="bg-white p-8 rounded-2xl shadow-md mt-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">📅 Course Layout</h2>
-        <div class="space-y-4">
+        <!-- Info Grid -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16 animate-entry delay-100">
+            <!-- Aims -->
+            <div class="lecture-card p-8 bg-white/80">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-3 bg-red-100 text-red-600 rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-900">Course Aims</h2>
+                </div>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Unlock the ability to provide useful financial information for sound economic decisions. By the end,
+                    you'll master:
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        <span><strong>Core Principles:</strong> Conceptual frameworks of accounting.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        <span><strong>Recording:</strong> Journal entries & ledger accounts.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        <span><strong>Financial Statements:</strong> Balance Sheet, P&L, Equity Changes.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Lecturer -->
+            <div class="lecture-card p-8 bg-white/80">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-3 bg-indigo-100 text-indigo-600 rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-900">About the Lecturer</h2>
+                </div>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    <strong>Dr. Shay Tsaban</strong> is a CPA combining finance, strategy, and social responsibility.
+                    With a Ph.D. from Ariel University, his research spans Corporate Happiness Responsibility (CHR) and
+                    gender wage gaps.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    He brings extensive field experience, having served on the Examination Committee of the Board of
+                    Accountants at the Ministry of Justice, ensuring you learn not just theory, but practice.
+                </p>
+            </div>
+        </div>
+
+        <!-- Course Layout Title -->
+        <div class="mb-8 text-center animate-entry delay-200">
+            <h2 class="text-3xl font-bold text-gray-800">Course Syllabus & Videos</h2>
+            <div class="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Timeline Layout -->
+        <div class="space-y-8 animate-entry delay-300 max-w-5xl mx-auto">
 
             <!-- Lecture 1 -->
-            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300">
-                <h3 class="text-xl font-semibold text-blue-700">Lecture 1: Basics of Financial Accounting Values - 29.10.2025</h3>
-                <p class="mt-2 text-gray-600">This introductory lecture covers the five fundamental elements of accounting. Understanding these concepts is the first step to reading and preparing financial statements.</p>
-                <ul class="list-disc list-inside space-y-1 text-gray-700 mt-2 pl-4">
-                    <li><strong>Assets:</strong> Economic resources controlled by the entity (e.g., cash, machinery, inventory) that are expected to provide future benefits.</li>
-                    <li><strong>Liabilities:</strong> The entity's obligations to other parties (e.g., loans, amounts owed to suppliers) that must be settled in the future.</li>
-                    <li><strong>Equity:</strong> The residual interest in the assets after deducting liabilities. It represents the ownership's stake in the company (Assets - Liabilities = Equity).</li>
-                    <li><strong>Income:</strong> Increases in economic benefits, such as revenues from sales or services, which result in an increase in equity.</li>
-                    <li><strong>Expenses:</strong> Decreases in economic benefits, such as the cost of goods sold or salaries, which result in a decrease in equity.</li>
-                </ul>
-                <div class="mt-4">
-                    <h4 class="font-semibold text-gray-800 mb-2">📹 Lecture Video:</h4>
-                    <div class="video-container max-w-2xl">
-                        <iframe src="https://www.youtube.com/embed/PcCJStAw7tU?rel=0" title="Lecture 1 Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <article class="lecture-card p-6 md:p-8 bg-white">
+                <div
+                    class="flex flex-col md:flex-row justify-between md:items-center border-b border-gray-100 pb-4 mb-4">
+                    <div>
+                        <span class="text-sm font-bold text-blue-500 uppercase tracking-wide">29.10.2025</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-1">Lecture 1: Basics of Financial Accounting
+                            Values</h3>
                     </div>
                 </div>
-            </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="text-gray-600 space-y-4">
+                        <p>The five fundamental elements of accounting. The first step to reading financial statements.
+                        </p>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex gap-2">
+                                <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2"></div>
+                                <span><strong>Assets:</strong> Economic resources (Cash, Machinery).</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2"></div>
+                                <span><strong>Liabilities:</strong> Obligations to settle in the future.</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2"></div>
+                                <span><strong>Equity:</strong> Residual interest (Assets - Liabilities).</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/PcCJStAw7tU" title="Lecture 1 Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </article>
 
             <!-- Lecture 2 -->
-            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300">
-                <h3 class="text-xl font-semibold text-blue-700">Lecture 2: Sales, Cost of Goods Sold, Gross Profit and basics of P&L - 5.11.2025</h3>
-                <p class="mt-2 text-gray-600">This lecture introduces key concepts of the Income Statement (Profit & Loss Statement) and how companies measure their profitability from operations.</p>
-                <ul class="list-disc list-inside space-y-1 text-gray-700 mt-2 pl-4">
-                    <li><strong>Sales Revenue:</strong> The total income generated from selling goods or services to customers during a specific period.</li>
-                    <li><strong>Cost of Goods Sold (COGS):</strong> The direct costs attributable to producing the goods sold by a company, including materials and direct labor.</li>
-                    <li><strong>Gross Profit:</strong> The difference between sales revenue and cost of goods sold (Sales - COGS = Gross Profit), representing the profit before operating expenses.</li>
-                    <li><strong>Profit & Loss Statement (P&L):</strong> Also known as the Income Statement, it shows a company's revenues, expenses, and net income over a period of time.</li>
-                </ul>
-                <div class="mt-4">
-                    <h4 class="font-semibold text-gray-800 mb-2">📹 Lecture Video:</h4>
-                    <div class="video-container max-w-2xl">
-                        <iframe src="https://www.youtube.com/embed/BBH9yep7QOw?rel=0" title="Lecture 2 Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <article class="lecture-card p-6 md:p-8 bg-white">
+                <div
+                    class="flex flex-col md:flex-row justify-between md:items-center border-b border-gray-100 pb-4 mb-4">
+                    <div>
+                        <span class="text-sm font-bold text-blue-500 uppercase tracking-wide">5.11.2025</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-1">Lecture 2: P&L Basics & Gross Profit</h3>
                     </div>
                 </div>
-            </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="text-gray-600 space-y-4">
+                        <p>Understanding the Income Statement (Profit & Loss) and measuring operational profitability.
+                        </p>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex gap-2">
+                                <div class="w-1.5 h-1.5 bg-indigo-400 rounded-full mt-2"></div><span><strong>Sales
+                                        Revenue:</strong> Income from goods/services.</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <div class="w-1.5 h-1.5 bg-indigo-400 rounded-full mt-2"></div>
+                                <span><strong>COGS:</strong> Direct costs of production.</span>
+                            </li>
+                            <li class="flex gap-2">
+                                <div class="w-1.5 h-1.5 bg-indigo-400 rounded-full mt-2"></div><span><strong>Gross
+                                        Profit:</strong> Sales - COGS.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/BBH9yep7QOw" title="Lecture 2 Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </article>
 
             <!-- Lecture 3 -->
-            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300">
-                <h3 class="text-xl font-semibold text-blue-700">Lecture 3: Journal Entries - 12.11.2025</h3>
-                <p class="mt-2 text-gray-600">Journal entries are the foundational mechanism for recording business transactions in accounting. They document the double-entry principle, ensuring that every transaction affects at least two accounts and maintains the accounting equation (Assets = Liabilities + Equity). Properly recorded journal entries form the basis for all subsequent financial reporting and analysis.</p>
-                <div class="space-y-6 mt-4">
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 3 - Morning (9:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/f2bSxiVLR-E?rel=0" title="Lecture 3 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <article class="lecture-card p-6 md:p-8 bg-white">
+                <div class="border-b border-gray-100 pb-4 mb-6">
+                    <span class="text-sm font-bold text-blue-500 uppercase tracking-wide">12.11.2025</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">Lecture 3: Journal Entries</h3>
+                    <p class="text-gray-600 mt-2 max-w-3xl">Recording transactions using the double-entry principle.
+                        Essential ensuring the accounting equation (Assets = Liabilities + Equity) always balances.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Group 1 -->
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Morning Group (9:15)
+                        </h4>
+                        <div class="video-wrapper w-full">
+                            <iframe src="https://www.youtube.com/embed/f2bSxiVLR-E" title="Lecture 3 Morning"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 3 - Noon (12:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/_JDGjScFmh0?rel=0" title="Lecture 3 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!-- Group 2 -->
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                                </path>
+                            </svg>
+                            Noon Group (12:15)
+                        </h4>
+                        <div class="video-wrapper w-full">
+                            <iframe src="https://www.youtube.com/embed/_JDGjScFmh0" title="Lecture 3 Noon"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Lecture 4 -->
-            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300">
-                <h3 class="text-xl font-semibold text-blue-700">Lecture 4: Income Recognition - 19.11.2025</h3>
-                <p class="mt-2 text-gray-600">Income recognition is a critical accounting principle that determines when revenue should be recorded. Under accrual accounting, revenue is recognized when it is earned, not necessarily when cash is received. This lecture explores the criteria for revenue recognition, including the transfer of control of goods or services to the customer, and how this principle impacts financial statements and cash flow analysis.</p>
-                <div class="space-y-6 mt-4">
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 4 - Morning (9:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/s-jWpIF2vhI?rel=0" title="Lecture 4 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <article class="lecture-card p-6 md:p-8 bg-white">
+                <div class="border-b border-gray-100 pb-4 mb-6">
+                    <span class="text-sm font-bold text-blue-500 uppercase tracking-wide">19.11.2025</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">Lecture 4: Income Recognition</h3>
+                    <p class="text-gray-600 mt-2">Determining when revenue is recorded under accrual accounting (earned
+                        vs. received). Covers criteria like transfer of control.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Morning Group (9:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/s-jWpIF2vhI" title="Lecture 4 Morning"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 4 - Noon (12:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/K8FF2BwI4tU?rel=0" title="Lecture 4 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Noon Group (12:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/K8FF2BwI4tU" title="Lecture 4 Noon"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Lecture 5 -->
-            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300">
-                <h3 class="text-xl font-semibold text-blue-700">Lecture 5: Expense Recognition - 26.11.2025</h3>
-                <p class="mt-2 text-gray-600">Expense recognition determines when costs incurred by an entity should be recorded as expenses in the income statement. Under the matching principle, expenses are matched to the revenues they help generate. This lecture covers how expenses are allocated across periods, segments, and cost centers (חשבונות חתך בחשבונאות - cross-sectional accounts), which allows for better understanding of profitability by department, product line, or business division.</p>
-                <div class="space-y-6 mt-4">
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 5 - Morning (9:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/ogCduRCYbAU?rel=0" title="Lecture 5 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <article class="lecture-card p-6 md:p-8 bg-white">
+                <div class="border-b border-gray-100 pb-4 mb-6">
+                    <span class="text-sm font-bold text-blue-500 uppercase tracking-wide">26.11.2025</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">Lecture 5: Expense Recognition</h3>
+                    <p class="text-gray-600 mt-2">Matching principle and cross-sectional accounts (חשבונות חתך) for
+                        correct period allocation.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Morning Group (9:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/ogCduRCYbAU" title="Lecture 5 Morning"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 5 - Noon (12:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/oCDy4wxW5O4?rel=0" title="Lecture 5 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Noon Group (12:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/oCDy4wxW5O4" title="Lecture 5 Noon"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Lecture 6 -->
-            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300">
-                <h3 class="text-xl font-semibold text-blue-700">Lecture 6: Accounts Receivable and Provisions for Bad Debts - 3.12.2025</h3>
-                <p class="mt-2 text-gray-600">This lecture examines how companies manage and account for amounts owed by customers (accounts receivable). A key challenge in accounting for receivables is determining the carrying value when there is a risk that some customers will not pay. Under the expected credit loss model, companies must estimate and record provisions (allowances) for bad debts. This requires judgment about customer creditworthiness and historical collection patterns, and directly impacts both the balance sheet valuation of assets and the income statement through the recognition of bad debt expense. Understanding this topic is crucial for assessing a company's asset quality and profitability.</p>
-                <div class="space-y-6 mt-4">
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 6 - Morning (9:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/eZKbFo-XHw4?rel=0" title="Lecture 6 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <article class="lecture-card p-6 md:p-8 bg-white">
+                <div class="border-b border-gray-100 pb-4 mb-6">
+                    <span class="text-sm font-bold text-blue-500 uppercase tracking-wide">3.12.2025</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">Lecture 6: Receivables & Bad Debts</h3>
+                    <p class="text-gray-600 mt-2">Managing accounts receivable and provisions for bad debts using the
+                        expected credit loss model.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Morning Group (9:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/eZKbFo-XHw4" title="Lecture 6 Morning"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 6 - Noon (12:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/d5Dvx_XmjlQ?rel=0" title="Lecture 6 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Noon Group (12:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/d5Dvx_XmjlQ" title="Lecture 6 Noon"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <!-- Lecture 7 -->
-            <div class="p-6 border-2 border-blue-400 rounded-xl lecture-card bg-blue-50">
-                <div class="flex items-center gap-3 mb-2">
-                    <h3 class="text-xl font-semibold text-blue-700">Lecture 7: Fixed Assets (Property, Plant & Equipment) - Introduction to Depreciation - 10.12.2025</h3>
-                    <span class="new-badge bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">NEW</span>
-                </div>
-                <p class="mt-2 text-gray-600">This lecture introduces <strong>non-current assets</strong>, specifically <strong>Property, Plant, and Equipment (PP&E)</strong>, also known as <strong>Fixed Assets (רכוש קבוע)</strong>. Unlike current assets expected to be converted to cash within a year, fixed assets are long-term tangible assets used in operations for more than one year.</p>
-                
-                <div class="mt-4 bg-white p-4 rounded-lg border border-blue-200">
-                    <h4 class="font-semibold text-gray-800 mb-3">📋 Key Topics Covered:</h4>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li><strong>Definition of Fixed Assets:</strong> Assets that meet two cumulative conditions: (1) expected useful life exceeding one year, and (2) physical/tangible existence (e.g., machinery, vehicles, buildings, furniture, computers).</li>
-                        <li><strong>Cost Measurement:</strong> Fixed assets are initially recorded at cost, which includes the purchase price plus all necessary costs to bring the asset to its location and working condition (transportation, installation, customs duties). Recurring costs like maintenance are expensed, not capitalized.</li>
-                        <li><strong>Depreciation Concept:</strong> The systematic allocation of an asset's cost over its useful life. Depreciation expense appears in the Income Statement, while accumulated depreciation reduces the asset's carrying value on the Balance Sheet.</li>
-                        <li><strong>Straight-Line Depreciation (קו ישר):</strong> The most common method, assuming equal depreciation each year. Formula: <em>Depreciation = (Cost - Residual Value) / Useful Life</em></li>
-                        <li><strong>Sum-of-Years-Digits Depreciation (סכום ספרות יורד - סס"י):</strong> An accelerated method recognizing higher depreciation in early years. Uses the formula: <em>Sum of Digits = n × (n+1) / 2</em>, where n is the useful life in years.</li>
-                        <li><strong>Partial Year Depreciation:</strong> When assets are acquired or disposed of mid-year, depreciation is calculated proportionally based on the number of months the asset was in use.</li>
-                        <li><strong>Gain/Loss on Disposal:</strong> When selling a fixed asset, the difference between sale proceeds and carrying value (cost minus accumulated depreciation) results in either a capital gain (רווח הון) or capital loss (הפסד הון).</li>
-                        <li><strong>Land Treatment:</strong> Land is not depreciated as it does not wear out or lose value through use. When purchasing property, the land portion is treated as residual value.</li>
-                    </ul>
-                </div>
-
-                <div class="mt-4 bg-white p-4 rounded-lg border border-blue-200">
-                    <h4 class="font-semibold text-gray-800 mb-3">🔢 Key Formulas:</h4>
-                    <div class="space-y-2 text-gray-700 font-mono text-sm bg-gray-50 p-3 rounded">
-                        <p><strong>Carrying Value (Book Value):</strong> Cost - Accumulated Depreciation</p>
-                        <p><strong>Straight-Line Depreciation:</strong> D = (I₀ - Iᵣ) / n</p>
-                        <p><strong>Sum of Digits:</strong> SD = n × (n + 1) / 2</p>
-                        <p><strong>SYD Depreciation:</strong> D = (Cost - Residual) × (Digit / Sum of Digits)</p>
-                        <p><strong>Gain/Loss on Sale:</strong> Sale Proceeds - Carrying Value at Sale Date</p>
+            <!-- Lecture 7 - Detailed Card -->
+            <article class="lecture-card p-0 md:p-0 bg-white border border-blue-200 shadow-xl overflow-hidden relative">
+                <div
+                    class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-xl z-20">
+                    MAJOR TOPIC</div>
+                <div class="p-8 bg-gradient-to-br from-blue-50 to-white">
+                    <div class="mb-6">
+                        <span class="text-sm font-bold text-blue-600 uppercase tracking-wide">10.12.2025</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-1">Lecture 7: Fixed Assets & Depreciation</h3>
+                        <p class="text-gray-700 mt-2">Introduction to Property, Plant, and Equipment (PP&E). Key
+                            concepts include cost measurement, depreciation methods (Straight-Line, Sum-of-Years), and
+                            disposal.</p>
                     </div>
-                </div>
 
-                <div class="space-y-6 mt-6">
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 7 - Morning (9:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/xPu2_z5egX8?rel=0" title="Lecture 7 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-white p-5 rounded-xl border border-blue-100 shadow-sm">
+                            <h4 class="font-bold text-gray-800 mb-3 text-sm uppercase text-blue-800">Key Concepts</h4>
+                            <ul class="text-sm space-y-2 text-gray-600">
+                                <li>• <strong>Definition:</strong> Tangible assets, >1 year life.</li>
+                                <li>• <strong>Cost:</strong> Purchase + installation costs.</li>
+                                <li>• <strong>Depreciation:</strong> Allocation of cost over life.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-blue-900 text-white p-5 rounded-xl shadow-sm">
+                            <h4 class="font-bold mb-3 text-sm uppercase text-blue-300">Key Formulas</h4>
+                            <div class="space-y-2 font-mono text-xs opacity-90">
+                                <p>CV = Cost - Accord. Dep.</p>
+                                <p>Straight-Line = (Cost - Residual) / Life</p>
+                                <p>Sum-Digits = n(n + 1) / 2</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 7 - Noon (12:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/0iaxCCj3C8k?rel=0" title="Lecture 7 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-
-             <div class="space-y-6 mt-6">
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 8 - Morning (9:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/0x5InGe1wpE?rel=0" title="Lecture 7 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="video-group p-4 bg-white">
+                            <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Morning Group (9:15)</h4>
+                            <div class="video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/xPu2_z5egX8" title="Lecture 7 Morning"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
-                    </div>
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 8 - Noon (12:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/NwL7ucuMsuU?rel=0" title="Lecture 7 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="video-group p-4 bg-white">
+                            <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Noon Group (12:15)</h4>
+                            <div class="video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/0iaxCCj3C8k" title="Lecture 7 Noon"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </article>
 
-             <div class="space-y-6 mt-6">
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 9 - Morning (9:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/WU9fP74RLyw?rel=0" title="Lecture 7 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- Lecture 8 -->
+            <article class="lecture-card p-6 md:p-8 bg-white">
+                <div class="border-b border-gray-100 pb-4 mb-6">
+                    <!-- Date missing in source, assuming weekly cadence or placeholder -->
+                    <span class="text-sm font-bold text-blue-500 uppercase tracking-wide">Lecture 8</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">Continued Topics</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Morning Group (9:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/0x5InGe1wpE" title="Lecture 8 Morning"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 9 - Noon (12:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/wcOejcJf66k?rel=0" title="Lecture 7 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Noon Group (12:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/NwL7ucuMsuU" title="Lecture 8 Noon"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
+            </article>
 
-
-    <div class="space-y-6 mt-6">
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 10 - Morning (9:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/yP-xFBQsmLE?rel=0" title="Lecture 7 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- Lecture 9 -->
+            <article class="lecture-card p-6 md:p-8 bg-white">
+                <div class="border-b border-gray-100 pb-4 mb-6">
+                    <span class="text-sm font-bold text-blue-500 uppercase tracking-wide">Lecture 9</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">Advanced Topics & Integration</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Morning Group (9:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/WU9fP74RLyw" title="Lecture 9 Morning"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-                
- <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 10 - Noon (12:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/2AHkXfvXqy4?rel=0" title="Lecture 7 Noon Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Noon Group (12:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/wcOejcJf66k" title="Lecture 9 Noon"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
+            </article>
 
-
-               <div class="space-y-6 mt-6">
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 11 - Morning (9:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/5unI9cYuwiU?rel=0" title="Lecture 7 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- Lecture 10 -->
+            <article class="lecture-card p-6 md:p-8 bg-white">
+                <div class="border-b border-gray-100 pb-4 mb-6">
+                    <span class="text-sm font-bold text-blue-500 uppercase tracking-wide">Lecture 10</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">Financial Statements Preparation</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Morning Group (9:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/yP-xFBQsmLE" title="Lecture 10 Morning"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-
-                   <div class="space-y-6 mt-6">
-                    <div class="lecture-group p-6 rounded-lg">
-                        <h4 class="text-lg font-semibold text-blue-800 mb-3">🎬 Lecture 11 - Noon (12:15) Group</h4>
-                        <div class="video-container max-w-2xl">
-                            <iframe src="https://www.youtube.com/embed/4W9TDrtWNVg?rel=0" title="Lecture 7 Morning Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Noon Group (12:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/2AHkXfvXqy4" title="Lecture 10 Noon"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
+                </div>
+            </article>
 
-            
-            
-            <!-- Upcoming Lectures -->
-           
+            <!-- Lecture 11 -->
+            <article class="lecture-card p-6 md:p-8 bg-white">
+                <div class="border-b border-gray-100 pb-4 mb-6">
+                    <span class="text-sm font-bold text-blue-500 uppercase tracking-wide">Lecture 11</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">Review & Complex Scenarios</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Morning Group (9:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/5unI9cYuwiU" title="Lecture 11 Morning"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Noon Group (12:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/4W9TDrtWNVg" title="Lecture 11 Noon"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300 bg-gray-50">
-                <h3 class="text-xl font-semibold text-gray-500">📌 Lecture 9 & 10: Integration and Full Preparation of Financial Statements</h3>
-                <p class="mt-2 text-gray-500 italic">Coming soon</p>
-            </div>
+            <!-- NEW Lecture 12 -->
+            <article class="lecture-card p-6 md:p-8 bg-white relative overflow-hidden">
+                <div
+                    class="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-xl z-20 badge-pulse">
+                    NEW</div>
+                <div class="border-b border-gray-100 pb-4 mb-6">
+                    <span class="text-sm font-bold text-green-600 uppercase tracking-wide">14.1.2026</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">Lecture 12: Exam Practice (2025a)</h3>
+                    <p class="text-gray-600 mt-2">Solving multiple small equations from the 2025a exam. Essential for
+                        understanding exam format and quick calculation techniques.</p>
+                </div>
+                <div class="max-w-2xl mx-auto">
+                    <div class="video-group p-4">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/53GgWyNqKus" title="Lecture 12 Exam Practice"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-            <div class="p-6 border border-gray-200 rounded-xl lecture-card hover:border-blue-300 bg-gray-50">
-                <h3 class="text-xl font-semibold text-gray-500">📌 Final Lectures: Comprehensive Review & Exam Preparation</h3>
-                <p class="mt-2 text-gray-500 italic">Coming soon</p>
-            </div>
+            <!-- NEW Lecture 13 -->
+            <article class="lecture-card p-6 md:p-8 bg-white relative overflow-hidden">
+                <div
+                    class="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-xl z-20 badge-pulse">
+                    NEW</div>
+                <div class="border-b border-gray-100 pb-4 mb-6">
+                    <span class="text-sm font-bold text-green-600 uppercase tracking-wide">21.1.2026</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">Lecture 13: Property & Complex Questions</h3>
+                    <p class="text-gray-600 mt-2">Short questions with special emphasis on complicated property
+                        scenarios.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Morning Group (9:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/d-VQRtTykP4" title="Lecture 13 Morning"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="video-group p-4">
+                        <h4 class="text-sm font-bold text-gray-500 uppercase mb-3">Noon Group (12:15)</h4>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/mPX83XMV5qk" title="Lecture 13 Noon"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
         </div>
-    </div>
 
-</main>
+    </main>
 
-<footer class="gradient-bg text-white mt-8 py-6">
-    <div class="container mx-auto px-6 text-center">
-        <p>For any questions, feel free to reach out.</p>
-        <p class="mt-2">Contact: <a href="mailto:shay.tsaban@gmail.com" class="font-semibold hover:underline">shay.tsaban@gmail.com</a></p>
-        <p class="mt-4 text-sm opacity-75">© 2025 Dr. Shay Tsaban - Yezreel Valley College</p>
-    </div>
-</footer>
+    <footer class="bg-slate-900 text-slate-300 mt-12 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-white text-lg font-bold mb-4">Questions?</h3>
+            <p class="mb-6 max-w-md mx-auto">Dr. Tsaban is available to help clarify any complex topics found in the
+                accounting curriculum.</p>
+            <a href="mailto:shay.tsaban@gmail.com"
+                class="inline-flex items-center gap-2 text-white bg-blue-600 hover:bg-blue-700 font-semibold py-2 px-6 rounded-full transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                    </path>
+                </svg>
+                shay.tsaban@gmail.com
+            </a>
+            <div class="mt-8 pt-8 border-t border-slate-800 text-sm opacity-50">
+                <p>© 2025 Dr. Shay Tsaban - Yezreel Valley College</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>
